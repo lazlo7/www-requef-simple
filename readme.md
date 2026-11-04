@@ -1,4 +1,4 @@
-Simple & static personal page. No javascript. Self-contained.
+Simple & static personal page. No javascript.
 
 ## Running
 
