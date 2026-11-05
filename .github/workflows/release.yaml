@@ -26,7 +26,7 @@ jobs:
           ./scripts/bootstrap.sh
 
       - name: Pack site
-        run: tar czvf site.tar.gz src
+        run: tar --numeric-owner --owner=0 --group=0 -czvf site.tar.gz src
 
       - name: Publish release
         env:
