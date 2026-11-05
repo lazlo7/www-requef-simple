@@ -1,0 +1,18 @@
+[Unit]
+Description=Update personal website
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=personal-site
+Group=personal-site
+
+Environment="WORKING_DIR=/var/www/requef.com"
+ExecStart=/usr/local/libexec/personal-site/update.sh
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/www/requef.com

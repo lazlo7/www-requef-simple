@@ -1,0 +1,10 @@
+[Unit]
+Description=Check for new personal website releases
+
+[Timer]
+OnCalendar=*:0/10
+Persistent=true
+RandomizedDelaySec=30s
+
+[Install]
+WantedBy=timers.target
